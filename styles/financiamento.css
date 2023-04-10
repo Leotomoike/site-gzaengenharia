@@ -1,0 +1,117 @@
+.financiamento {
+    background-image: url("../assets/backgrounds/projetosbg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+
+.financiamento__container {
+    height: 30vh;
+    background-image: url("../assets/fotos/casafinanciamento.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.financiamento__titulo {
+    text-align: left;
+    padding: 3.2em 0 0 3.2em;
+    font-size: 40px;
+}
+
+.financiamento__subtitulo {
+    padding-left: 4.7em;
+    text-align: left;
+    font-size: 28px;
+}
+
+.parceiros__titulo {
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+.parceiros__container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .financiamento {
+        background-image: url("../assets/backgrounds/financiamentobg.svg");
+        height: 70vh;
+    }
+
+    .financiamento__container {
+        height: 70vh;
+        position: absolute;
+    }
+
+    .financiamento__titulo {
+        text-align: left;
+        padding: 1.1em 0 0 7.7em;
+        font-size: 70px;
+    }
+    
+    .financiamento__subtitulo {
+        padding-left: 11.3em;
+        text-align: left;
+        font-size: 48px;
+    }
+
+    .financiamento__parceiros {
+        position: absolute;
+    }
+
+    .parceiros__titulo {
+        font-size: 32px;
+        margin-top: 11em;
+        padding-left: 11em;
+        text-align: left;
+    }
+
+    .parceiros__container {
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+        height: 20vh;
+        padding-left: 21em;
+    }
+
+    .parceiros__container img {
+        padding-right: 3em;
+    }
+}
+
+@media screen and (min-width: 1428px) {
+    .financiamento {
+        padding: 0 15vw;
+        height: 80vh;
+    }
+
+    .financiamento__titulo {
+        padding: 1.1em 0 0 7.5em;
+        font-size: 96px;
+    }
+    
+    .financiamento__subtitulo {
+        padding-left: 12em;
+        font-size: 60px;
+    }
+
+    .parceiros__container {
+        height: 28vh;
+        padding-left: 25em;    }
+
+    .parceiros__titulo {
+        font-size: 36px;
+        margin-top: 12em;
+        padding-left: 12em;
+    }
+    
+}

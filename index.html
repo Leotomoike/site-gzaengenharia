@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:wght@400;600&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <title>GZA Engenharia</title>
+
+</head>
+<body>
+    <main>
+        <header class="cabecalho">
+            <div class="cabecalho__container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>    
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Home</li>
+                    <li class="lista-menu__item">
+                        <a href="#servicos" class="lista-menu__link">Serviços</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#projetos" class="lista-menu__link">Projetos</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#sobre" class="lista-menu__link">Sobre</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#contato" class="lista-menu__link">Contato</a>
+                    </li>
+                </ul>
+                <img src="assets/logos/logogzabranco.png" alt="Logo GZA em branco" class="container__logo">
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="banner__container">
+                <h2 class="banner__titulo">A arte de <strong>construir</strong> o seu <strong>sonho</strong></h2>
+                <a href="https://api.whatsapp.com/send?phone=5544988677498" class="banner__botao">Fale conosco</a>
+            </div>
+        </section>    
+
+        <section class="servicos" id="servicos">
+            <h2 class="servicos__titulo">Conheça nossos serviços</h2>
+            
+            <ul class="projetos__lista">    
+                <div class="swiper">
+                    <!-- Slider main container -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- Additional required wrapper -->
+                   
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <li class="servicos__item">
+                            <img src="assets/icons/projarq.svg" alt="Ícone de projeto arquitetônico" class="servicos__img">
+                            <p class="servicos__texto">Projeto Arquitetônico</p>
+                        </li>                
+                        <li class="servicos__item">
+                            <img src="assets/icons/projestr.svg" alt="Ícone de projeto estrutural" class="servicos__img">
+                            <p class="servicos__texto">Projeto Estrutural</p>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="servicos__item">
+                            <img src="assets/icons/acomtec.svg" alt="Ícone de Acompanhcamento Técnico">
+                            <p class="servicos__texto">Acompanhamento Técnico</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/admobr.svg" alt="Ícone de Administração de obras">
+                            <p class="servicos__texto">Adminsitração de Obras</p>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="servicos__item">
+                            <img src="assets/icons/ref.svg" alt="Ícone de Reformas">
+                            <p class="servicos__texto">Reformas</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/execobr.svg" alt="Ícone de Execução de obras">
+                            <p class="servicos__texto">Execução de Obras</p>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="servicos__item">
+                            <img src="assets/icons/finban.svg" alt="Ícone de Financiamento Bancário">
+                            <p class="servicos__texto">Financiamento Bancário</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/unidesm.svg" alt="Ícone de Unificação e desmembramento">
+                            <p class="servicos__texto">Unificação e Desmembramento</p>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="servicos__item">
+                            <img src="assets/icons/avaimo.svg" alt="Ícone de Avaliação do Imóvel">
+                            <p class="servicos__texto">Avaliação do Imóvel</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/laudtec.svg" alt="Ícone de Laudo Técnico">
+                            <p class="servicos__texto">Laudo Técnico</p>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="servicos__item">
+                            <img src="assets/icons/projhidr.svg" alt="Ícone de Projeto Hidrossanitário">
+                            <p class="servicos__texto">Projeto Hidrossanitário</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/projeletr.svg" alt="Ícone de Projeto Elétrico">
+                            <p class="servicos__texto">Projeto Elétrico</p>
+                        </li>
+                    </div>
+                </div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                
+                </div>
+            </ul>
+
+            <ul class="projetos__lista__desktop">    
+                        <li class="servicos__item">
+                            <img src="assets/icons/projarq.svg" alt="Ícone de projeto arquitetônico" class="servicos__img">
+                            <p class="servicos__texto">Projeto Arquitetônico</p>
+                        </li>                
+                        <li class="servicos__item">
+                            <img src="assets/icons/projestr.svg" alt="Ícone de projeto estrutural" class="servicos__img">
+                            <p class="servicos__texto">Projeto Estrutural</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/acomtec.svg" alt="Ícone de Acompanhcamento Técnico" class="servicos__img">
+                            <p class="servicos__texto">Acompanhamento Técnico</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/admobr.svg" alt="Ícone de Administração de obras" class="servicos__img">
+                            <p class="servicos__texto">Adminsitração de Obras</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/ref.svg" alt="Ícone de Reformas" class="servicos__img">
+                            <p class="servicos__texto">Reformas</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/execobr.svg" alt="Ícone de Execução de obras" class="servicos__img">
+                            <p class="servicos__texto">Execução de Obras</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/finban.svg" alt="Ícone de Financiamento Bancário" class="servicos__img">
+                            <p class="servicos__texto">Financiamento Bancário</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/unidesm.svg" alt="Ícone de Unificação e desmembramento" class="servicos__img">
+                            <p class="servicos__texto">Unificação e Desmembramento</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/avaimo.svg" alt="Ícone de Avaliação do Imóvel" class="servicos__img">
+                            <p class="servicos__texto">Avaliação do Imóvel</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/laudtec.svg" alt="Ícone de Laudo Técnico" class="servicos__img">
+                            <p class="servicos__texto">Laudo Técnico</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/projhidr.svg" alt="Ícone de Projeto Hidrossanitário" class="servicos__img">
+                            <p class="servicos__texto">Projeto Hidrossanitário</p>
+                        </li>
+                        <li class="servicos__item">
+                            <img src="assets/icons/projeletr.svg" alt="Ícone de Projeto Elétrico" class="servicos__img">
+                            <p class="servicos__texto">Projeto Elétrico</p>
+                        </li>
+
+            </ul>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <img src="./assets/icons/nossosprojetos.svg" alt="Nossos Projetos mais de 10mil metros quadrados construídos" class="projetos__imagem">
+            <div class="swiper">
+                <!-- Slider main container -->            
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                            <img src="assets/fotos/1.jpg" alt="Imagem de capa livro Apache Kafka">
+                    </div>    
+                    <div class="swiper-slide"><img src="assets/fotos/2.jpg" alt="Imagem de capa livro Liderança"></div>
+                    <div class="swiper-slide"><img src="assets/fotos/5.jpg" alt="Imagem de capa livro Javascript"></div>
+                    <div class="swiper-slide"><img src="assets/fotos/4.jpg" alt="Imagem de capa livro UX"></div>
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </section>
+
+        <section class="sobre" id="sobre">
+            <!-- 1ª linha -->
+            <div class="sobre__perfil">
+                <!-- 1ª coluna -->
+                <div class="perfil">
+                    <h3 class="perfil__titulo">Eng. Gustavo Zaupa Alves <br>CREA: 159.580/D</h3>
+                    <img src="assets/fotos/gustavo.svg" alt="Imagem de Gustavo Zaupa Alves" class="perfil__foto">                
+                </div>
+            </div>
+            
+            <div class="sobre__descricao">
+                <h2 class="sobre__titulo">Sobre nós</h2>
+                <p class="sobre__texto">Fundada em 2017, pelo Engenheiro Gustavo Zaupa Alves, formado pela universidade UNINGÁ em 2016, e pós-graduado em MBA de Gerenciamentos de projetos, em 2018, pela universidade UNICESUMAR. <br><br>A GZA ENGENHARIA CIVIL, localizada em Doutor Camargo-PR, credenciada pela CAIXA ECONOMICA FEDERAL, busca executar o melhor serviço, através de softwares renomados, que trazem confiança e credibilidade. <br><br>Há mais de cinco anos no ramo, com o objetivo de construir sua casa própria, através de financiamentos ou recursos próprios, e também para você construtor, que busca construir um imóvel para venda através de planos de financiamento. <br><br>Além de outros serviços como: projetos arquitetônicos, projetos complementares (estrutural, hidrossanitários e elétricos), imagens, unificação e desmembramentos de lotes, avaliação de imóvel, administração e execução obra, orçamentos para construção, entre outros. </p>
+            </div>
+
+        </section>
+
+        <section class="financiamento">
+            <div class="financiamento__container">
+                <h2 class="financiamento__titulo">6 MILHÕES</h2>
+                <h3 class="financiamento__subtitulo">EM OBRAS <br>FINANCIADAS</h3>
+            </div>
+            
+            <div class="financiamento__parceiros">
+                <h4 class="parceiros__titulo">Nossos parceiros:</h4>
+                <div class="parceiros__container">
+                    <img src="assets/logos/caixa.svg" alt="Logo Caixa Econômica">
+                    <img src="assets/logos/sicredi.svg" alt="Logo Sicredi">
+                    <img src="assets/logos/bradesco.svg" alt="Logo Bradesco">
+                </div>
+            </div>
+        </section>
+
+        <section class="depoimentos">
+            <h2 class="depoimentos__titulo">Depoimentos</h2>
+            <div class="depoimentos__container__test">
+            <div class="depoimentos__container">
+                <p class="depoimentos__texto">Desde o momento em que entrei em contato para entender melhor, até a entrega da minha residência, fui atendido da melhor maneira possível. <br>Com muita paciência, atenção, explicando passo a passo, cada etapa do projeto, consegui acompanhar a construção da minha casa nos mínimos detalhes, graças ao excelente trabalho do Gustavo.</p>
+                <h4 class="depoimentos__nome">Rosangela</h4>
+            </div>
+            <div class="depoimentos__container">
+                <p class="depoimentos__texto">Já realizei alguns projetos com o Gustavo como forma de investimento, e a cada projeto ele consegue prestar um serviço melhor ainda. <br>Tenho confiança total em realizar todos meus projetos com ele, pois sei que serão entregues com a qualidade de sempre!</p>
+                <h4 class="depoimentos__nome">Emerson</h4>
+            </div>
+            <div class="depoimentos__container">
+                <p class="depoimentos__texto">Quando começamos a planejar a construção de nossa casa, não sabia nem da metade do que realmente era necessário.<br>O Gustavo nos mostrou todo o processo, nos orientou das melhores opções, e ainda nos ajudou a financiar a construção, que também não sabíamos como fazer.
+                    Graças a ele, nossa casa se tornou muito mais fácil.</p>
+                <h4 class="depoimentos__nome">Adriana</h4>
+            </div>
+            </div>
+        </section>
+        
+        <section class="contato" id="contato">
+            <!-- 1ª linha -->
+            <div class="contato__foto">
+           
+            </div>
+            
+            <div class="contato__container">
+                <h2 class="contato__titulo">Entre em contato</h2>
+                <h3 class="contato__item">Endereço</h3>
+                <p class="contato__texto">Av. Andirá, 44 - Centro<br>Doutor Camargo-PR</p>
+                <h3 class="contato__item">Telefone e WhatsApp</h3>
+                <p class="contato__texto">(44) 98867-7498</p>
+                <h3 class="contato__item">Horários de atendimento</h3>
+                <p class="contato__texto">Segunda à sexta: <br>8:00 - 18:00</p>
+                <p class="contato__texto">Sábado: <br>8:00 - 12:00</p>
+                <h3 class="contato__item">Redes Sociais</h3>
+                <div class="contatos__redes">
+                    <a href="#"><img src="assets/logos/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/gzaengenharia/"><img src="assets/logos/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="assets/logos/linkedin.svg" alt="Linkedin"></a>
+                </div>
+            </div>
+        </section> 
+        <footer class="rodape">
+            <img src="./assets/logos/logogzabranco.svg" alt="">
+            <p>Todos os direitos reservados a GZA Engenharia, 2023.</p>
+        </footer>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=5544988677498" class="botao__wpp"  target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>   
+
+    </main>   
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script> 
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 30,
+                slideShadows: false,
+            },
+            zoom: {
+                maxRatio: 5,
+            },
+        });
+    </script>
+</body>
+</html>

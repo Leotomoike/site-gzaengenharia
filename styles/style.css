@@ -1,0 +1,47 @@
+@import url("header.css");
+@import url("banner.css");
+@import url("servicos.css");
+@import url("projetos.css");
+@import url("sobre.css");
+@import url("financiamento.css");
+@import url("depoimentos.css");
+@import url("contato.css");
+@import url("footer.css");
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #AB1616;
+    --cor-quartenaria: #9b9b9b;
+    --cor-background: #171717;
+    --gradiente-cinza: linear-gradient(97.54deg, #9b9b9b 35.49%, #f6f6f6 165.37%);
+
+    --fonte-primaria: 'Ubuntu', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --swiper-theme-color: #f6f6f6;
+}
+
+
+body {
+    background-color: var(--cor-background);
+}
+
+.botao__wpp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:20px;
+    background-color:#33FF33;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+}
+
+.botao__wpp:hover {
+    background-color: #208b20;
+
+}

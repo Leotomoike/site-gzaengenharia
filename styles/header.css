@@ -1,0 +1,126 @@
+.cabecalho__menu-hamburguer {
+    width: 20vw;
+    height: 8vh;
+    background-image: url(../assets/icons/menu-branco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__botao:checked~.container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../assets/icons/menu-aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--gradiente-cinza);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+    height: 10vh;
+    padding-bottom: .5em;
+}
+
+.cabecalho__container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: .3em 0;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top:100%;
+    width: auto;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1em;
+    background: var(--gradiente-cinza);
+}
+
+.lista-menu__titulo {
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.lista-menu__link {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container__botao {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        font-size: 27px;
+    }
+    
+    .container__logo {
+        padding-left: 17.5vw;
+    }
+}
+
+@media screen and (min-width: 1428px) {
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .lista-menu {
+        display: flex;
+        top: 0%;
+        justify-content: flex-end;
+        padding-left: 20vw;
+        position: relative;
+    }
+
+    .lista-menu__item, .lista-menu__titulo {
+        background: none;
+    }
+
+    .lista-menu__titulo {
+        text-transform: uppercase;
+        color: var(--cor-secundaria);
+    }
+    
+    .lista-menu__link {
+        color: var(--cor-secundaria);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .container__logo {
+        position: relative;
+        padding-left: 3vw;
+    }
+
+    .cabecalho__container {
+        flex-direction: row-reverse;
+        padding-top: 5vh;
+    }
+
+    .lista-menu__link:hover {
+        text-decoration: underline;
+    }
+
+
+}

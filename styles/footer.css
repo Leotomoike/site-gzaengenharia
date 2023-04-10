@@ -1,0 +1,28 @@
+.rodape {
+    height: 25vh;
+    background-color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 12px;
+    font-weight: 400;
+}    
+
+.rodape img {
+        width: 40vw;
+}
+    
+.rodape p {
+        color: var(--cor-secundaria);
+        font-size: 14px;
+        margin: 0 1rem;
+    }
+
+
+@media (min-width: 1000px) {
+    .rodape {
+        height: 25vh;
+    }
+    .rodape         img {
+        width: 15vw;
+    }
+}

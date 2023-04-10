@@ -1,0 +1,105 @@
+.sobre {
+    background-image: url("../assets/backgrounds/sobrebg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.perfil__foto {
+    width: 100%;
+}
+
+.perfil__titulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 300;
+    font-size: 18px;
+    position: absolute;
+    padding-left: 5em;
+    padding-top: .5em;
+}
+
+.sobre__descricao {
+padding: 0 2em;
+background-image: url("../assets/logos/gzacircle.svg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 130%;
+}
+
+.sobre__titulo {
+    padding-bottom: .5em;
+}
+
+.sobre__texto {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.2em;
+    border-top: 1px solid var(--cor-secundaria);
+    padding-top: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 75.5vh;
+        background-position: 90%;
+    }
+
+    .perfil__titulo {
+        font-family: var(--fonte-primaria);
+        font-weight: 300;
+        font-size: 24px;
+        position: absolute;
+        padding-left: 5em;
+        padding-top: 18em;
+    }
+
+    .sobre__descricao {
+        padding: 0 2em;
+        background-image: none;
+        }
+    
+    .sobre__titulo {
+        padding: 2em 0 1em 0;
+        font-size: 30px;
+        font-weight: 300;
+    }
+        
+    .sobre__texto {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1em;
+        border-top: 1px solid var(--cor-secundaria);
+        padding-top: 1em;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1428px) {
+    .sobre {
+        padding: 2em 10em;
+        height: 102vh;
+    }
+
+    .perfil__titulo {
+        font-size: 26px;
+        padding-top: 26em;
+        text-align: left;
+    }
+
+    .sobre__titulo {
+        padding: 2.5em 0 1em 0;
+        font-size: 36px;
+    }
+
+    .sobre__texto {
+        font-size: 20px;
+        line-height: 1.2em;
+    }
+}

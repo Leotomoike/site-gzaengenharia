@@ -1,0 +1,108 @@
+.depoimentos {
+    background-image: url("../assets/backgrounds/sobrebg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200vw;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    padding: 3em 5em;
+}
+
+.depoimentos__titulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.depoimentos__container {
+    display: grid;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 16px;
+    margin-bottom: 2em;
+    background-image: url("../assets/icons/blur.svg");
+    background-repeat: space;
+    height: 30%;
+}
+
+.depoimentos__texto {
+    padding: 1.5em;
+
+}
+
+.depoimentos__nome {
+    background-color: #9b9b9b;
+    font-size: 16px;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    padding: 1em;
+    border-radius: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    .depoimentos {
+        background-color: (--cor-background);
+        background-image: none;
+        height: 60vh;
+        background-size: auto;
+    }
+
+    .depoimentos__titulo {
+        font-family: var(--fonte-primaria);
+        font-weight: 300;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 1em 0;
+    }
+
+    .depoimentos__container__test {
+        display: flex;
+        
+    }
+
+    .depoimentos__container {
+        width: 30vw;
+        margin: 0 1em;
+        align-items: end;
+        height: 300px;
+    }
+
+    .depoimentos__texto {
+        font-size: 16px;
+    }
+
+    .depoimentos__nome {
+        background-color: #9b9b9b;
+        font-size: 20px;
+        color: var(--cor-primaria);
+        font-weight: 600;
+        padding: .5em;
+        border-radius: 16px;
+        height: 5vh;
+    }
+}
+
+@media screen and (min-width: 1428px) {
+    .depoimentos {
+        background-color: (--cor-background);
+        background-image: none;
+        height: 600px;
+    }
+    
+    .depoimentos__container {
+        height: 400px;
+        background-size: 100%;
+    }
+    
+    .depoimentos__texto {
+        font-size: 20px;
+    }
+
+    .depoimentos__nome {
+        font-size: 24px;
+    }
+}
